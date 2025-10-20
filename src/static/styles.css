@@ -142,3 +142,51 @@ footer {
   padding: 20px;
   color: #666;
 }
+
+/* Participants section inside activity card */
+.participants {
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px solid #eee;
+}
+
+.participants h5 {
+  margin: 0 0 8px 0;
+  font-size: 14px;
+  color: #37474f;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Bulleted list, scrollable when long */
+.participants-list {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin: 0;
+  max-height: 110px;
+  overflow-y: auto;
+}
+
+/* Individual participant entry */
+.participants-list li {
+  padding: 6px 0;
+  font-size: 14px;
+  color: #455a64;
+  border-bottom: 1px dashed #f0f0f0;
+}
+
+/* Empty state when no participants */
+.participants-empty {
+  font-style: italic;
+  color: #90a4ae;
+  font-size: 14px;
+  padding: 6px 0;
+}
+
+/* Slightly reduce card padding on small screens so participants look tidy */
+@media (max-width: 480px) {
+  .activity-card {
+    padding: 12px;
+  }
+}
